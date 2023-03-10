@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -auv --include '*/' --include '*.html' --exclude '*' ./ ../
+sudo touch /tmp/file_0.html && sudo chmod 644 /tmp/file_0.html && ls -l /tmp/file_0.html
