@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(cat /etc/passwd) $(cat /etc/hosts)"
+paste /etc/passwd /etc/hosts
