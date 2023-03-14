@@ -1,2 +1,2 @@
 #!/bin/bash
-set | grep -vE 'BASH_|BASHOPTS|EUID|PPID|UID' | cat | env | declare -F | grep -oP "(?<=declare -f ).*"
+set | grep -vE 'BASH_|BASHOPTS|EUID|PPID|UID' | cat 
