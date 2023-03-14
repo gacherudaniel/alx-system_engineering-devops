@@ -1,2 +1,2 @@
 #!/bin/bash
-diff set printenv
+set | grep -vE 'BASH_|BASHOPTS|EUID|PPID|UID' | cat | env | declare -F | grep -oP "(?<=declare -f ).*"
