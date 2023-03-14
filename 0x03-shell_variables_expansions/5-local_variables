@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Local variables:"; compgen -v; echo "Environment variables:"; printenv; echo "Functions:"; declare -F | cut -d ' ' -f 3
