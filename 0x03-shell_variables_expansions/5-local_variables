@@ -1,2 +1,2 @@
 #!/bin/bash
-set | grep -vE 'BASH_|BASHOPTS|EUID|PPID|UID' | cat 
+echo $(set), $(printenv), $(declare -F) 
