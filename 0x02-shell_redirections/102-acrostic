@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "$(cat | sed 's/^\(.\).*$/\1/g' | tr -d '\n')\n"
