@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -AFpd | sort -d | tr '\n' ',' | sed 's/,$/\n/'
+ls -AFpd | sed 's/ /\n/g' | sort -d | tr '\n' ',' | sed 's/,$/\n/'
